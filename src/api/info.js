@@ -98,7 +98,7 @@ export function notifyShop(data) {
 // 字典值
 export function batchGetDictList (data) {
     return request({
-        url: 'https://yunservice.inca.com.cn/base/dictionary/batchGetDictList',
+        url: '/dictionary/batchGetDictList',
         method: 'post',
         data
     })
