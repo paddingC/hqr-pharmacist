@@ -7,6 +7,7 @@ function resolve(dir) {
 }
 module.exports = {
     // 使用运行时编译器的 Vue 构建版本
+    publicPath: process.env.NODE_ENV === "production" ? "/pharmacist/" : "/",
     runtimeCompiler: true,
     // 开启生产环境SourceMap，设为false打包时不生成.map文件
     productionSourceMap: true,
